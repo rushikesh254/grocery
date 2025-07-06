@@ -1,10 +1,10 @@
 import toast from "react-hot-toast";
-import { useAppContext } from "../../context/AppContext";
+import { useAppContext } from "../../context/appContext";
 import React, { useState, useEffect } from "react";
 const SellerLogin = () => {
   const { isSeller, setIsSeller, navigate, axios } = useAppContext();
-  const [email, setEmail] = useState("rushikeshbodke884@gmail.com");
-  const [password, setPassword] = useState("rushikesh");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   useEffect(() => {
     if (isSeller) {
       navigate("/seller");

@@ -1,8 +1,5 @@
 import { useState } from "react";
-import { useAppContext } from "../context/AppContext";
-// Importing necessary libraries and components
-import { useNavigate } from "react-router-dom";
-// Importing toast for notifications
+import { useAppContext } from "../context/appContext";
 import { toast } from "react-hot-toast";
 const Auth = () => {
   const [state, setState] = useState("login");
